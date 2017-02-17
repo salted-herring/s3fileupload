@@ -183,6 +183,7 @@ class S3FileUploadField extends UploadField
                 ['bucket' => $bucket],
                 ['acl' => $acl],
                 ['starts-with', '$key', ''],
+                ['starts-with', '$ID', ''],
                 ['starts-with', '$Content-Type', ''],
                 ['success_action_status' => $successStatus],
                 ['x-amz-credential' => $credentials],
